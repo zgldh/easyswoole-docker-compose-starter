@@ -5,7 +5,7 @@
         }
     },
     "require": {
-        "easyswoole/easyswoole": "3.x",
+        "easyswoole/easyswoole": "3.x"
     },
     "require-dev": {
         "easyswoole/swoole-ide-helper": "^1.3"

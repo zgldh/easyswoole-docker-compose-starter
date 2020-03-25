@@ -3,6 +3,8 @@ FROM easyswoole/easyswoole3
 # Dir
 WORKDIR /easyswoole
 
-CMD ["php", "easyswoole", "start"]
+ADD ./startup.sh /opt/startup.sh
+
+CMD ["/bin/bash", "/opt/startup.sh"]
 
 EXPOSE 9501
