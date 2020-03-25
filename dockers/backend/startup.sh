@@ -1,6 +1,6 @@
 #!/bin/bash
 
-vendordir="./vendor"
+vendordir="/easyswoole/vendor"
 if [ -e $vendordir ]
 then
    echo "Vendor is set"
