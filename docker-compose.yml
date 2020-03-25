@@ -1,0 +1,17 @@
+version: '3'
+
+networks:
+  backend:
+    driver: bridge
+
+services:
+  # backend
+  backend:
+    build:
+      context: ./dockers/backend
+    volumes:
+      - ./src/:/easyswoole/
+    networks:
+      - backend
+    ports:
+      - "9501:9501"
